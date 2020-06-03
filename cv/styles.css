@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  height:auto;
+}
+
+a { text-decoration: none; }
+
+h3 {
+  color: #1a322d;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+
+}
+p {
+  color: #1a322d;
+  line-height : 19px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+
+}
+
+ul {
+  list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+
+ul li::before {
+  list-style: circle;
+  content: "\2022";
+  color: #4f9686;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -2em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+
+dl{
+  border-bottom: 1px dotted #58a795;
+
+}
+
+
+
+
+@media print {
+ html, body {
+   width: 210mm;
+   height: 297mm;
+ }
+}
+
+iframe{
+    overflow:hidden;
+    scrolling="no";
+    height: 100%;
+      margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+hr { 
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  border: none;
+
+  background-image: linear-gradient(to right, #58a795, #f1cf7a);
+} 
+
+
+#milieu {
+    margin-top: 0;
+	display: flex;
+	flex-direction: row;  
+}
+
+
+
+#gauche{
+	display: flex;
+	flex-direction: column; 
+	width :50mm;
+    height: 297mm;
+    background-color: #eef6f4;
+    padding-left: 10px;
+    margin:0;
+
+}
+
+#droite{
+	width :160mm;
+    height: 297mm;
+	display: flex;
+	flex-direction: column; 
+    background-color: #fafcfc;
+    margin:0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.title{
+
+    color: #4f9686;
+    margin: 0;
+    border-bottom: 2px solid #58a795;
+    text-align: center;
+}
+
+.police_gauche{
+    color: #1a322d;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+
+
+
+.police_gauche_c2{
+    color: #b38600;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.police_gauche_contenu{
+    color: #1a322d;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: left;
+
+}
+
+.icone_droite{
+  color:#58a795;
+  font-size:25px;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+
+.annee{
+  color:#58a795
+}
+
+.p_describe{
+  color:#2b544c
+}
+
+.describe_droite{
+    color: #1a322d;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/******** LATEX ***********/
+
+.latex sub, .latex sup { text-transform: uppercase; line-height: 1em; position: inherit; }
+.latex sub { font-size: 1em; vertical-align: -0.5ex; margin-left: -0.1667em; margin-right: -0.125em; }
+.latex sup { font-size: 0.85em; vertical-align: 0.15em; margin-left: -0.36em; margin-right: -0.15em; }
